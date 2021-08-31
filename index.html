@@ -20,7 +20,7 @@
      <nav class="navbar fixed-top navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
         <img src="https://image.flaticon.com/icons/png/512/868/868786.png" width="40" height="40" class="d-inline-block align-top" alt="">
-        Equipo 6
+        Mantenimiento Equipo 1 al Eq. 6
      </a>
     </nav>
    </div>
@@ -28,7 +28,7 @@
       <div class="col-sm text-center text-primary">
         <div class="contentText">
            <h2>
-            Ingrese lados de un triangulo para determinar que tipo es
+            Ingrese lados de un triangulo para determinar que tipo es y sus características
           </h2>
         </div>
       </div>
@@ -36,12 +36,12 @@
 	 <div class="row">
    	<div class="col-sm">
    			<div class="input-group">
-  				<input id="sideA" type="text" aria-label="First name" class="form-control" placeholder="lado A">
-  				<input id="sideB" type="text" aria-label="Last name" class="form-control"
+  				<input id="sideA" type="number" aria-label="First name" class="form-control" placeholder="lado A">
+  				<input id="sideB" type="number" aria-label="Last name" class="form-control"
   				placeholder="lado B">
-  				<input id="sideC" type="text" aria-label="Last name" class="form-control"
+  				<input id="sideC" type="number" aria-label="Last name" class="form-control"
   				placeholder="lado C">
-  				<button class="btn btn-danger" type="button" id="button-addon1" onclick="findTriangleType()">BUSCAR</button>
+  				<button class="btn btn-danger" type="button" id="button-addon1" onclick="findTriangleType()">CAlCULAR</button>
 			</div>
 		</div>
   	</div>
@@ -49,10 +49,15 @@
     <div class="row">
       <div class="col-sm">
         <div id="cardId" class="contentText shadow p-3 mb-5 rounded text-center">
-          <div class="card-body">    
+          <div class="card-body">
             <img id="triangleImg" src="https://image.flaticon.com/icons/png/512/3088/3088953.png" class="img-fluid" alt="Responsive image">
             <h1 id="triangleType" class="text-center" style="text-transform:uppercase">?</h1>
-          </div>
+						<h2 id="anglesTriangle" class="text-center" style="text-transform:uppercase">:)</h2>
+						<h2 id="baseText" class="text-center" style="text-transform:uppercase"> </h2>
+						<h2 id="alturaText" class="text-center" style="text-transform:uppercase"> </h2>
+						<h2 id="perimeterText" class="text-center" style="text-transform:uppercase"> </h2>
+						<h2 id="areaText" class="text-center" style="text-transform:uppercase"> </h2>
+					</div>
         </div>
       </div>
     </div>
@@ -97,5 +102,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="dist/js/calcularTriangulo.js"></script>
+
 </body>
 </html>
